@@ -8,3 +8,7 @@ function gestionarFicheroXML(fichero)
 
 	document.getElementById('ficheroXML').innerHTML += "<b>" + xmlDoc.querySelector('libro:nth-child(2)').textContent + "</b>"
 }
+document.querySelector("div:nth-child(1)").addEventListener("click",()=>{
+
+    let xmlDoc = loadLDocA("libros.xml","xml");
+})
