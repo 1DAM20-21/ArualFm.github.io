@@ -2,17 +2,18 @@
 
 let fichero = "libros.xml";
 loadLDocA(fichero,"xml")
-function gestionarFicheroXML(document){
+function gestionarFicheroXML(xmlDoc){ //document){ //No puedes llamar al parámetro document, ya que document contiene el html. Llámale xmlDoc
+	alert(xmlDoc)
 	
-	alert(xmlDoc.getElementsByTagName('libro')[0].firstChild.nodeValue)
-	alert(xmlDoc.getElementsByTagName('libreria')[0].childNodes[1].firstChild.nodeValue)
+	
 
 	document.getElementById('ficheroXML').innerHTML += "<b>" + xmlDoc.querySelector('libro:nth-child(2)').textContent + "</b>"
 	
 }
 
+/*
 document.querySelector("div:nth-child(1)").addEventListener("click",()=>{
 
     let xmlDoc = loadLDocA("leerFicheroXML.xml","xml");
-})
+})*/
     
