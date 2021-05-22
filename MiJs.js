@@ -4,9 +4,10 @@ function gestionarFicheroXML(xmlDoc){
 	let capaVacia = document.querySelector("#ficheroXML")
 	let libros = xmlDoc.querySelectorAll("libreria")
 	for (let i = 0; i < libros.length; i++) {
-		 capaVacia.innerHTML = capaVacia.innerHTML + "<table>" + libros[i].textContent + "</table>"
-		 capaVacia.innerHTML = capaVacia.innerHTML + "<tr>" + libros[i+1].textContent + "</tr>"
-		
+		 capaVacia.innerHTML = capaVacia.innerHTML + "<table>" + 
+		 libros[i].textContent + "<tr>" + libros[i+1].textContent +
+		 libros[--libros.length].textContent + "<td>" + "</td>" + 
+		 "</tr>" + "</table>" 
 	}
 }
 
