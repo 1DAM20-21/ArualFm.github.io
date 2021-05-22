@@ -16,4 +16,3 @@ document.querySelector("div:nth-child(1)").addEventListener("click",()=>{
     let xmlDoc = loadLDocA("leerFicheroXML.xml","xml");
 })
     
-})
