@@ -1,7 +1,7 @@
 'use strict'
 
-let document = "libros.xml";
-loadLDocA(document,"xml")
+let fichero = "libros.xml";
+loadLDocA(fichero,"xml")
 function gestionarFicheroXML(document){
 	
 	alert(xmlDoc.getElementsByTagName('libro')[0].firstChild.nodeValue)
