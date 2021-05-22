@@ -7,7 +7,7 @@ function gestionarFicheroXML(xmlDoc){ //document){ //No puedes llamar al paráme
 	
 	
 
-	document.getElementById('ficheroXML').innerHTML += "<b>" + xmlDoc.querySelector('libro:nth-child(2)').textContent + "</b>"
+	//document.getElementById('ficheroXML').innerHTML += "<b>" + xmlDoc.querySelector('libro:nth-child(2)').textContent + "</b>"
 	
 }
 
