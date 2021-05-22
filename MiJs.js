@@ -1,5 +1,6 @@
 'use strict;'
 loadLDocA("libros.xml","xml");
+let xmlDoc = loadLDocA("libros.xml","xml");
 
 function gestionarFicheroXML(xmlDoc) {
     alert(xmlDoc.getElementsByTagName('libros')[0].firstChild.nodeValue)
@@ -9,5 +10,5 @@ function gestionarFicheroXML(xmlDoc) {
 }
 document.querySelector("div:nth-child(1)").addEventListener("click",()=>{
 
-    let xmlDoc = loadLDocA("libros.xml","xml");
+    
 })
