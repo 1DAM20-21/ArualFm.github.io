@@ -1,18 +1,18 @@
 'use strict'
 
-let fichero = "libros.xml";
-loadLDocA(fichero,"xml")
-function gestionarFicheroXML(xmlDoc){ //document){ //No puedes llamar al parámetro document, ya que document contiene el html. Llámale xmlDoc
-	alert(xmlDoc)
-
-
-
-	//document.getElementById('ficheroXML').innerHTML += "<b>" + xmlDoc.querySelector('libro:nth-child(2)').textContent + "</b>"
-
+function gestionarFicheroXML(xmlDoc){
+	let capaVacia = document.querySelector("#ficheroXML")
+	let libros = xmlDoc.querySelectorAll("libro")
+	for (let i = 0; i < libros.length; i++) {
+		 capaVacia.innerHTML = capaVacia.innerHTML + "<p>" + libros[i].textContent + "</p>"
+		
+	}
 }
 
-/*
-document.querySelector("div:nth-child(1)").addEventListener("click",()=>{
+let capa = document.querySelector("div:nth-child(1)")
+capa.addEventListener("click",cargarFichero);
+function cargarFichero(){
+	loadLDocA("libros.xml","xml");
+}
 
-    let xmlDoc = loadLDocA("leerFicheroXML.xml","xml");
-})*/
+
